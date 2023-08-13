@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <style>
+      body {
+        padding-bottom: 70px;
+      }
+    </style>
+    <title>Tetris in JavaScript by Gaurav Sinha</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1>Tetris - By Gaurav Sinha</h1>
+            <h2 id="score">Press <kbd>P</kbd> or click the button to start</h2>
+          </div>
+          <div class="col-12 text-center">
+            <canvas id="canvas"></canvas>
+            <div class="mt-2">
+              <button id="btnResume" class="btn btn-success">
+                <i class="fas fa-play"></i>
+              </button>
+              <button hidden id="btnPause" class="btn btn-success">
+                <i class="fas fa-pause"></i>
+              </button>
+              <button id="btnLeft" class="btn btn-success">
+                <i class="fas fa-arrow-left"></i>
+              </button>
+              <button id="btnDown" class="btn btn-success">
+                <i class="fas fa-arrow-down"></i>
+              </button>
+              <button id="btnRight" class="btn btn-success">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+              <button id="btnRotate" class="btn btn-success">
+                <i class="fas fa-undo"></i>
+              </button>
+              <button class="btn btn-danger" id="reset">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="px-2 py-2 fixed-bottom bg-dark">
+      <span class="text-muted"
+        >Tetris in JavaScript created by Gaurav Sinha
+      </span>
+    </footer>
+  </body>
+  <script src="js/sweetalert2.min.js"></script>
+  <script src="js/tetris.js"></script>
+</html>
